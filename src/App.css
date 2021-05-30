@@ -1,0 +1,199 @@
+.App {
+  width:100%;
+  height:630px;
+}
+button{
+  cursor: pointer;
+}
+.App .container_Home{
+  width:100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction:column;
+}
+.App .container_Home .slidebar-but{
+  width:100%;
+  height:70px;
+  float: flex;
+}
+.App .container_Home .slidebar-but button{
+  background-color:white;
+  width:100px;
+  height:40px;
+  border:1px solid pink;
+  color:pink;
+  margin:10px;
+  font-size:12px;
+}
+.App .container_Home .slidebar-but button:active{
+  border:1px solid gray;
+  color:pink;
+}
+.App .container_Home .slidebar-but button:hover{
+  color:gray;
+}
+.App .container_Home .model-but{
+  width:100%;
+  height:100%;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.App .container_Home .model-but button{
+   background-color:#ececec;
+    width:200px;
+    height:50px;
+    color:gray;
+    transition: all 1s;
+    border:0.5px solid gray;
+}
+.App .container_Home .model-but button:hover{
+   background-color:#5f59591a;
+    width:180px;
+    height:40px;
+    color:pink;
+    border:1px solid pink;
+
+}
+
+/*Model*/
+.App .container-model{
+  top:80px;
+  left:32%;
+  position:absolute;
+  width:500px;
+  height: 400px;
+  background-color: white;
+  transition: all 1s;
+  opacity: 1px;
+  display:flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.App .container-model .del-title{
+  display: flex;
+  border-bottom:1px solid #f7f7f7;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.App .container-model .del-title .title p{
+    font-size:12px;
+    font-weight:bold;
+}
+.App .container-model .del-title button{
+  height:30px;
+  width:30px;
+  border:0px solid red;
+  background-color: white;
+  color:red;
+  font-size: 11px;
+  
+}
+.App .container-model .del-title button:active{
+
+  font-size: 5px;
+  
+}
+
+/*slider*/
+
+.App .container-slidebar{
+  position:absolute;
+  top:5px;
+  left:0px;
+  height:92%;
+  width:300px;
+  background-color: white;
+  padding:20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.5s linear;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  z-index:100;
+}
+
+.App .closeSlide  {
+  position:absolute;
+  top:5px;
+  left:-100%;
+  height:92%;
+  width:300px;
+  background-color: white;
+  padding:20px;
+  transition: all 0.5s linear;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.App .container-slidebar .icon-item-button .icon-closebutton{
+  height: 50px;
+  width:100%;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom:1px solid #f7f7f7;
+}
+.App .container-slidebar .icon-item-button .icon-closebutton .icon-slidebar img{
+  height:40px;
+  padding:5px;
+}
+.App .container-slidebar .icon-item-button .icon-closebutton .button-close button{
+  height:30px;
+  width:50px;
+  border:0px solid red;
+  background-color: white;
+  color:red;
+  font-size: 11px;
+  padding-right:12px;
+}
+.App .container-slidebar .icon-item-button .icon-closebutton .button-close button:active{
+  font-size: 5px;
+}
+
+.App .container-slidebar .icon-item-button .Item{
+  width:100%;
+  padding:5px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 1;
+}
+.App .container-slidebar .icon-item-button .Item .icon{
+  width:40px;
+  font-size:20px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+}
+.App .container-slidebar .icon-item-button .Item .textName p{
+  font-size: 14px;
+  padding-left:5px;
+  font-weight:500;
+  color:gray;
+}
+a{
+  text-decoration: none;
+  color:gray;
+}
+.App .container-slidebar .footer-icon{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.App .container-slidebar .footer-icon .Item-icon{
+  width:60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color:#3db6d2;
+}
+
+.App .container-slidebar .footer-icon .Item-icon a{
+  color:#3db6d2;
+}
